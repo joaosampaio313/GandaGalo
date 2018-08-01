@@ -1,0 +1,141 @@
+\hypertarget{ajuda_8c}{\section{ajuda.\+c File Reference}
+\label{ajuda_8c}\index{ajuda.\+c@{ajuda.\+c}}
+}
+{\ttfamily \#include \char`\"{}ajuda.\+h\char`\"{}}\\*
+Include dependency graph for ajuda.\+c\+:
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ajuda_8c_a6110b896bccabff8c3810bd57644b456}{P\+A\+T\+H\+\_\+\+T\+A\+B\+U\+L\+E\+I\+R\+O\+S}~\char`\"{}/var/www/html/tabuleiros/\char`\"{}
+\item 
+\#define \hyperlink{ajuda_8c_a8d3521f45135e7df49cc09518576e02b}{P\+A\+T\+H\+\_\+\+U\+T\+I\+L\+I\+Z\+A\+D\+O\+R\+E\+S}~\char`\"{}/var/www/html/users/\char`\"{}
+\item 
+\#define \hyperlink{ajuda_8c_a1d5dab30b404fab91608086105afc78c}{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R}~10240
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ajuda_8c_a0a0d5761ae1faae33eaa1d4d574144bb}{line\+Advise} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e, int l, int c)
+\item 
+void \hyperlink{ajuda_8c_ab50f4910dc41a8f1a95ff93a937d5c55}{column\+Advise} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e, int l, int c)
+\item 
+void \hyperlink{ajuda_8c_adada5febce8930b9452ee3b5860985cb}{diagonal\+Advise} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e, int l, int c)
+\item 
+void \hyperlink{ajuda_8c_ae3357364a229b23fb76d6d014eee58a9}{check\+Adviser} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e, int l, int c)
+\item 
+void \hyperlink{ajuda_8c_a65119b1131ff083a5170a30a2f24e8fa}{give\+Help} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} n, char $\ast$buffer)
+\item 
+void \hyperlink{ajuda_8c_a6e7a084ec6e5a14201bfc2f52823cad7}{help\+Controller} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e)
+\item 
+void \hyperlink{ajuda_8c_a6eae6fda33fc6753ae72f6800108a340}{draw\+\_\+help} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e)
+\item 
+void \hyperlink{ajuda_8c_a66429492ac9b11c94e80e299faf80d9e}{solver} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} n, char $\ast$buffer)
+\item 
+void \hyperlink{ajuda_8c_a77da99fb58b9b0116edfaa50f9d6cffe}{choose\+Val} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e, int l, int c, char sol)
+\item 
+void \hyperlink{ajuda_8c_a02fc8a11bae110833e696829f4617d23}{draw\+\_\+solver} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ajuda ao jogador. 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ajuda_8c_a1d5dab30b404fab91608086105afc78c}{\index{ajuda.\+c@{ajuda.\+c}!M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R@{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R}}
+\index{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R@{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R}!ajuda.\+c@{ajuda.\+c}}
+\subsubsection[{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R~10240}}\label{ajuda_8c_a1d5dab30b404fab91608086105afc78c}
+Constante utilizada para definir o tamanho dos arrays locais formados nas funções criadas. \hypertarget{ajuda_8c_a6110b896bccabff8c3810bd57644b456}{\index{ajuda.\+c@{ajuda.\+c}!P\+A\+T\+H\+\_\+\+T\+A\+B\+U\+L\+E\+I\+R\+O\+S@{P\+A\+T\+H\+\_\+\+T\+A\+B\+U\+L\+E\+I\+R\+O\+S}}
+\index{P\+A\+T\+H\+\_\+\+T\+A\+B\+U\+L\+E\+I\+R\+O\+S@{P\+A\+T\+H\+\_\+\+T\+A\+B\+U\+L\+E\+I\+R\+O\+S}!ajuda.\+c@{ajuda.\+c}}
+\subsubsection[{P\+A\+T\+H\+\_\+\+T\+A\+B\+U\+L\+E\+I\+R\+O\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+A\+T\+H\+\_\+\+T\+A\+B\+U\+L\+E\+I\+R\+O\+S~\char`\"{}/var/www/html/tabuleiros/\char`\"{}}}\label{ajuda_8c_a6110b896bccabff8c3810bd57644b456}
+Caminho para chegar à pasta onde se encontram os tabuleiros do jogo. \hypertarget{ajuda_8c_a8d3521f45135e7df49cc09518576e02b}{\index{ajuda.\+c@{ajuda.\+c}!P\+A\+T\+H\+\_\+\+U\+T\+I\+L\+I\+Z\+A\+D\+O\+R\+E\+S@{P\+A\+T\+H\+\_\+\+U\+T\+I\+L\+I\+Z\+A\+D\+O\+R\+E\+S}}
+\index{P\+A\+T\+H\+\_\+\+U\+T\+I\+L\+I\+Z\+A\+D\+O\+R\+E\+S@{P\+A\+T\+H\+\_\+\+U\+T\+I\+L\+I\+Z\+A\+D\+O\+R\+E\+S}!ajuda.\+c@{ajuda.\+c}}
+\subsubsection[{P\+A\+T\+H\+\_\+\+U\+T\+I\+L\+I\+Z\+A\+D\+O\+R\+E\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+A\+T\+H\+\_\+\+U\+T\+I\+L\+I\+Z\+A\+D\+O\+R\+E\+S~\char`\"{}/var/www/html/users/\char`\"{}}}\label{ajuda_8c_a8d3521f45135e7df49cc09518576e02b}
+Caminho para chegar ao ficheiro dos utilizadores. 
+
+\subsection{Function Documentation}
+\hypertarget{ajuda_8c_ae3357364a229b23fb76d6d014eee58a9}{\index{ajuda.\+c@{ajuda.\+c}!check\+Adviser@{check\+Adviser}}
+\index{check\+Adviser@{check\+Adviser}!ajuda.\+c@{ajuda.\+c}}
+\subsubsection[{check\+Adviser}]{\setlength{\rightskip}{0pt plus 5cm}void check\+Adviser (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8c_ae3357364a229b23fb76d6d014eee58a9}
+Função que verifica se exista alguma casa em que é possivel dar A\+J\+U\+D\+A. \hypertarget{ajuda_8c_a77da99fb58b9b0116edfaa50f9d6cffe}{\index{ajuda.\+c@{ajuda.\+c}!choose\+Val@{choose\+Val}}
+\index{choose\+Val@{choose\+Val}!ajuda.\+c@{ajuda.\+c}}
+\subsubsection[{choose\+Val}]{\setlength{\rightskip}{0pt plus 5cm}void choose\+Val (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e, }
+\item[{int}]{l, }
+\item[{int}]{c, }
+\item[{char}]{sol}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8c_a77da99fb58b9b0116edfaa50f9d6cffe}
+Função responsável por alterar o valor da casa da posição (l,c) do tabuleiro. Em virtude disso mesmo, considera o carácter recebido, que lhe indica o valor a colocar.
+
+Se o carácter, for 'O' então joga S\+O\+L\+\_\+\+O. Caso contrário joga S\+O\+L\+\_\+\+X. \hypertarget{ajuda_8c_ab50f4910dc41a8f1a95ff93a937d5c55}{\index{ajuda.\+c@{ajuda.\+c}!column\+Advise@{column\+Advise}}
+\index{column\+Advise@{column\+Advise}!ajuda.\+c@{ajuda.\+c}}
+\subsubsection[{column\+Advise}]{\setlength{\rightskip}{0pt plus 5cm}void column\+Advise (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8c_ab50f4910dc41a8f1a95ff93a937d5c55}
+Função que verifica verticalmente se existe alguma casa em que é possivel dar A\+J\+U\+D\+A. \hypertarget{ajuda_8c_adada5febce8930b9452ee3b5860985cb}{\index{ajuda.\+c@{ajuda.\+c}!diagonal\+Advise@{diagonal\+Advise}}
+\index{diagonal\+Advise@{diagonal\+Advise}!ajuda.\+c@{ajuda.\+c}}
+\subsubsection[{diagonal\+Advise}]{\setlength{\rightskip}{0pt plus 5cm}void diagonal\+Advise (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8c_adada5febce8930b9452ee3b5860985cb}
+Função que verifica diagonalmente se existe alguma casa em que é possivel dar A\+J\+U\+D\+A. \hypertarget{ajuda_8c_a6eae6fda33fc6753ae72f6800108a340}{\index{ajuda.\+c@{ajuda.\+c}!draw\+\_\+help@{draw\+\_\+help}}
+\index{draw\+\_\+help@{draw\+\_\+help}!ajuda.\+c@{ajuda.\+c}}
+\subsubsection[{draw\+\_\+help}]{\setlength{\rightskip}{0pt plus 5cm}void draw\+\_\+help (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8c_a6eae6fda33fc6753ae72f6800108a340}
+Função que coloca no jogo a imagem que permite a ocorrência de ajudas. \hypertarget{ajuda_8c_a02fc8a11bae110833e696829f4617d23}{\index{ajuda.\+c@{ajuda.\+c}!draw\+\_\+solver@{draw\+\_\+solver}}
+\index{draw\+\_\+solver@{draw\+\_\+solver}!ajuda.\+c@{ajuda.\+c}}
+\subsubsection[{draw\+\_\+solver}]{\setlength{\rightskip}{0pt plus 5cm}void draw\+\_\+solver (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8c_a02fc8a11bae110833e696829f4617d23}
+Função encarregue de colocar a imagem que permite a ocorrência de uma iteração da resolução do solver. \hypertarget{ajuda_8c_a65119b1131ff083a5170a30a2f24e8fa}{\index{ajuda.\+c@{ajuda.\+c}!give\+Help@{give\+Help}}
+\index{give\+Help@{give\+Help}!ajuda.\+c@{ajuda.\+c}}
+\subsubsection[{give\+Help}]{\setlength{\rightskip}{0pt plus 5cm}void give\+Help (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{n, }
+\item[{char $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8c_a65119b1131ff083a5170a30a2f24e8fa}
+Função responsável por indicar ao jogador qual a posição mais acertada em que este deve jogar. \hypertarget{ajuda_8c_a6e7a084ec6e5a14201bfc2f52823cad7}{\index{ajuda.\+c@{ajuda.\+c}!help\+Controller@{help\+Controller}}
+\index{help\+Controller@{help\+Controller}!ajuda.\+c@{ajuda.\+c}}
+\subsubsection[{help\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Controller (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8c_a6e7a084ec6e5a14201bfc2f52823cad7}
+Função responsável por colocar no ecrã as imagens que informam as ajudas restantes do utilizador. \hypertarget{ajuda_8c_a0a0d5761ae1faae33eaa1d4d574144bb}{\index{ajuda.\+c@{ajuda.\+c}!line\+Advise@{line\+Advise}}
+\index{line\+Advise@{line\+Advise}!ajuda.\+c@{ajuda.\+c}}
+\subsubsection[{line\+Advise}]{\setlength{\rightskip}{0pt plus 5cm}void line\+Advise (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8c_a0a0d5761ae1faae33eaa1d4d574144bb}
+Função que verifica horizontalmente se existe alguma casa em que é possivel dar A\+J\+U\+D\+A. \hypertarget{ajuda_8c_a66429492ac9b11c94e80e299faf80d9e}{\index{ajuda.\+c@{ajuda.\+c}!solver@{solver}}
+\index{solver@{solver}!ajuda.\+c@{ajuda.\+c}}
+\subsubsection[{solver}]{\setlength{\rightskip}{0pt plus 5cm}void solver (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{n, }
+\item[{char $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8c_a66429492ac9b11c94e80e299faf80d9e}
+S\+O\+L\+V\+E\+R Função responsável por verificar em que posições poderá ocorrer a ação do solver do jogo. 

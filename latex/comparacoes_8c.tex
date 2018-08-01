@@ -1,0 +1,230 @@
+\hypertarget{comparacoes_8c}{\section{comparacoes.\+c File Reference}
+\label{comparacoes_8c}\index{comparacoes.\+c@{comparacoes.\+c}}
+}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}cgi.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}estado.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}comparacoes.\+h\char`\"{}}\\*
+Include dependency graph for comparacoes.\+c\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{comparacoes_8c_a5a1ceab07799919222689d6d5e6d9c57}{line\+\_\+\+Near\+X} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$n, int l, int c)
+\item 
+void \hyperlink{comparacoes_8c_a9c51e7360b047ca7c625f5c0845d284b}{line\+\_\+\+Spaced\+X} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$n, int l, int c)
+\item 
+void \hyperlink{comparacoes_8c_a574c234a1a84c9355485c4c936894ad5}{line\+\_\+\+Near\+O} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$n, int l, int c)
+\item 
+void \hyperlink{comparacoes_8c_a64433e2212c1500ebe17051266eab72a}{line\+\_\+\+Spaced\+O} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$n, int l, int c)
+\item 
+void \hyperlink{comparacoes_8c_a4814f5bb12565b08cf067ac4819ac538}{column\+\_\+\+Near\+X} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$n, int l, int c)
+\item 
+void \hyperlink{comparacoes_8c_aea2643998e5dd3ff744d2b026f766236}{column\+\_\+\+Spaced\+X} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$n, int l, int c)
+\item 
+void \hyperlink{comparacoes_8c_a7b1cc819c7571c87656152cf230843e6}{column\+\_\+\+Near\+O} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$n, int l, int c)
+\item 
+void \hyperlink{comparacoes_8c_a36c8c07a35510328fcd4f46869937bd1}{column\+\_\+\+Spaced\+O} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$n, int l, int c)
+\item 
+void \hyperlink{comparacoes_8c_acd83462f5f7d5788691e5db1b6d12f1c}{diagonal\+\_\+\+Near\+Dir\+O} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$n, int l, int c)
+\item 
+void \hyperlink{comparacoes_8c_aa00049afae698c5fc36a30fdf0eecbf2}{diagonal\+\_\+\+Near\+Esq\+O} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$n, int l, int c)
+\item 
+void \hyperlink{comparacoes_8c_ae6f8b718012f2607099de89610955b04}{diagonal\+\_\+\+Spaced\+O} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$n, int l, int c)
+\item 
+void \hyperlink{comparacoes_8c_ae2bb4b3c88c1c095c92a84a351fed416}{diagonal\+\_\+\+Near\+Dir\+X} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$n, int l, int c)
+\item 
+void \hyperlink{comparacoes_8c_a451ba55abf7b11d37e104555ca9fe894}{diagonal\+\_\+\+Near\+Esq\+X} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$n, int l, int c)
+\item 
+void \hyperlink{comparacoes_8c_a8c15a6ae156233aa352ae8d869ab863a}{diagonal\+\_\+\+Spaced\+X} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$n, int l, int c)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definição das funções que permitem a comparacão dos valores das casas dentro do tabuleiro. 
+
+\subsection{Function Documentation}
+\hypertarget{comparacoes_8c_a7b1cc819c7571c87656152cf230843e6}{\index{comparacoes.\+c@{comparacoes.\+c}!column\+\_\+\+Near\+O@{column\+\_\+\+Near\+O}}
+\index{column\+\_\+\+Near\+O@{column\+\_\+\+Near\+O}!comparacoes.\+c@{comparacoes.\+c}}
+\subsubsection[{column\+\_\+\+Near\+O}]{\setlength{\rightskip}{0pt plus 5cm}void column\+\_\+\+Near\+O (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{n, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{comparacoes_8c_a7b1cc819c7571c87656152cf230843e6}
+Função responsável por verificar se existe alguma posição em que é obrigatório jogar S\+O\+L\+\_\+\+X.
+
+Para tal, considera se duas casas verticais adjacentes possuem o valor de S\+O\+L\+\_\+\+O ou F\+I\+X\+O\+\_\+\+O. Uma das casas em questão corresponde, à casa da posição (l,c) do tabuleiro.
+
+Se a outra casa adjacente for V\+A\+Z\+I\+A, esta será uma posição onde ocorrerá a ajuda. Para além disso, se for V\+A\+Z\+I\+A ou A\+J\+U\+D\+A, será também uma das casas alteradas pelo solver do jogo. \hypertarget{comparacoes_8c_a4814f5bb12565b08cf067ac4819ac538}{\index{comparacoes.\+c@{comparacoes.\+c}!column\+\_\+\+Near\+X@{column\+\_\+\+Near\+X}}
+\index{column\+\_\+\+Near\+X@{column\+\_\+\+Near\+X}!comparacoes.\+c@{comparacoes.\+c}}
+\subsubsection[{column\+\_\+\+Near\+X}]{\setlength{\rightskip}{0pt plus 5cm}void column\+\_\+\+Near\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{n, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{comparacoes_8c_a4814f5bb12565b08cf067ac4819ac538}
+Função responsável por verificar se existe alguma posição em que é obrigatório jogar S\+O\+L\+\_\+\+O.
+
+Para tal, considera se duas casas verticais adjacentes possuem o valor de S\+O\+L\+\_\+\+X ou F\+I\+X\+O\+\_\+\+X. Uma das casas em questão corresponde, à casa da posição (l,c) do tabuleiro.
+
+Se a outra casa adjacente for V\+A\+Z\+I\+A, esta será uma posição onde ocorrerá a ajuda. Para além disso, se for V\+A\+Z\+I\+A ou A\+J\+U\+D\+A, será também uma das casas alteradas pelo solver do jogo. \hypertarget{comparacoes_8c_a36c8c07a35510328fcd4f46869937bd1}{\index{comparacoes.\+c@{comparacoes.\+c}!column\+\_\+\+Spaced\+O@{column\+\_\+\+Spaced\+O}}
+\index{column\+\_\+\+Spaced\+O@{column\+\_\+\+Spaced\+O}!comparacoes.\+c@{comparacoes.\+c}}
+\subsubsection[{column\+\_\+\+Spaced\+O}]{\setlength{\rightskip}{0pt plus 5cm}void column\+\_\+\+Spaced\+O (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{n, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{comparacoes_8c_a36c8c07a35510328fcd4f46869937bd1}
+Função responsável por verificar se existe alguma posição em que é obrigatório jogar S\+O\+L\+\_\+\+X.
+
+Para tal, considera as casas verticais espaçadas por uma casa V\+A\+Z\+I\+A ou A\+J\+U\+D\+A e que possuem o valor S\+O\+L\+\_\+\+O ou F\+I\+X\+O\+\_\+\+O. Uma dessas casas horizontais está na posição (l,c) do tabuleiro.
+
+Se a casa que se encontra no meio for V\+A\+Z\+I\+A, esta será uma posição onde ocorrerá a ajuda. Para além disso, se for V\+A\+Z\+I\+A ou A\+J\+U\+D\+A, será também uma das casas alteradas pelo solver do jogo. \hypertarget{comparacoes_8c_aea2643998e5dd3ff744d2b026f766236}{\index{comparacoes.\+c@{comparacoes.\+c}!column\+\_\+\+Spaced\+X@{column\+\_\+\+Spaced\+X}}
+\index{column\+\_\+\+Spaced\+X@{column\+\_\+\+Spaced\+X}!comparacoes.\+c@{comparacoes.\+c}}
+\subsubsection[{column\+\_\+\+Spaced\+X}]{\setlength{\rightskip}{0pt plus 5cm}void column\+\_\+\+Spaced\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{n, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{comparacoes_8c_aea2643998e5dd3ff744d2b026f766236}
+Função responsável por verificar se existe alguma posição em que é obrigatório jogar S\+O\+L\+\_\+\+O.
+
+Para tal, considera as casas verticais espaçadas por uma casa V\+A\+Z\+I\+A ou A\+J\+U\+D\+A e que possuem o valor S\+O\+L\+\_\+\+X ou F\+I\+X\+O\+\_\+\+X. Uma dessas casas horizontais está na posição (l,c) do tabuleiro.
+
+Se a casa que se encontra no meio for V\+A\+Z\+I\+A, esta será uma posição onde ocorrerá a ajuda. Para além disso, se for V\+A\+Z\+I\+A ou A\+J\+U\+D\+A, será também uma das casas alteradas pelo solver do jogo. \hypertarget{comparacoes_8c_acd83462f5f7d5788691e5db1b6d12f1c}{\index{comparacoes.\+c@{comparacoes.\+c}!diagonal\+\_\+\+Near\+Dir\+O@{diagonal\+\_\+\+Near\+Dir\+O}}
+\index{diagonal\+\_\+\+Near\+Dir\+O@{diagonal\+\_\+\+Near\+Dir\+O}!comparacoes.\+c@{comparacoes.\+c}}
+\subsubsection[{diagonal\+\_\+\+Near\+Dir\+O}]{\setlength{\rightskip}{0pt plus 5cm}void diagonal\+\_\+\+Near\+Dir\+O (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{n, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{comparacoes_8c_acd83462f5f7d5788691e5db1b6d12f1c}
+Função responsável por verificar se existe alguma posição em que é obrigatório jogar S\+O\+L\+\_\+\+X.
+
+Para tal, considera as casas oblíquas adjacentes segundo uma reta com declive positivo que possuem o valor S\+O\+L\+\_\+\+O ou F\+I\+X\+O\+\_\+\+O. Uma dessas casas horizontais está na posição (l,c) do tabuleiro.
+
+Se a casa que se encontra no meio for V\+A\+Z\+I\+A, esta será uma posição onde ocorrerá a ajuda. Para além disso, se for V\+A\+Z\+I\+A ou A\+J\+U\+D\+A, será também uma das casas alteradas pelo solver do jogo. \hypertarget{comparacoes_8c_ae2bb4b3c88c1c095c92a84a351fed416}{\index{comparacoes.\+c@{comparacoes.\+c}!diagonal\+\_\+\+Near\+Dir\+X@{diagonal\+\_\+\+Near\+Dir\+X}}
+\index{diagonal\+\_\+\+Near\+Dir\+X@{diagonal\+\_\+\+Near\+Dir\+X}!comparacoes.\+c@{comparacoes.\+c}}
+\subsubsection[{diagonal\+\_\+\+Near\+Dir\+X}]{\setlength{\rightskip}{0pt plus 5cm}void diagonal\+\_\+\+Near\+Dir\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{n, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{comparacoes_8c_ae2bb4b3c88c1c095c92a84a351fed416}
+Função responsável por verificar se existe alguma posição em que é obrigatório jogar S\+O\+L\+\_\+\+O.
+
+Para tal, considera as casas oblíquas adjacentes segundo uma reta com declive positivo que possuem o valor S\+O\+L\+\_\+\+X ou F\+I\+X\+O\+\_\+\+X. Uma dessas casas horizontais está na posição (l,c) do tabuleiro.
+
+Se a casa que se encontra no meio for V\+A\+Z\+I\+A, esta será uma posição onde ocorrerá a ajuda. Para além disso, se for V\+A\+Z\+I\+A ou A\+J\+U\+D\+A, será também uma das casas alteradas pelo solver do jogo. \hypertarget{comparacoes_8c_aa00049afae698c5fc36a30fdf0eecbf2}{\index{comparacoes.\+c@{comparacoes.\+c}!diagonal\+\_\+\+Near\+Esq\+O@{diagonal\+\_\+\+Near\+Esq\+O}}
+\index{diagonal\+\_\+\+Near\+Esq\+O@{diagonal\+\_\+\+Near\+Esq\+O}!comparacoes.\+c@{comparacoes.\+c}}
+\subsubsection[{diagonal\+\_\+\+Near\+Esq\+O}]{\setlength{\rightskip}{0pt plus 5cm}void diagonal\+\_\+\+Near\+Esq\+O (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{n, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{comparacoes_8c_aa00049afae698c5fc36a30fdf0eecbf2}
+Função responsável por verificar se existe alguma posição em que é obrigatório jogar S\+O\+L\+\_\+\+X.
+
+Para tal, considera as casas oblíquas adjacentes segundo uma reta com declive negativo que possuem o valor S\+O\+L\+\_\+\+O ou F\+I\+X\+O\+\_\+\+O. Uma dessas casas horizontais está na posição (l,c) do tabuleiro.
+
+Se a casa que se encontra no meio for V\+A\+Z\+I\+A, esta será uma posição onde ocorrerá a ajuda. Para além disso, se for V\+A\+Z\+I\+A ou A\+J\+U\+D\+A, será também uma das casas alteradas pelo solver do jogo. \hypertarget{comparacoes_8c_a451ba55abf7b11d37e104555ca9fe894}{\index{comparacoes.\+c@{comparacoes.\+c}!diagonal\+\_\+\+Near\+Esq\+X@{diagonal\+\_\+\+Near\+Esq\+X}}
+\index{diagonal\+\_\+\+Near\+Esq\+X@{diagonal\+\_\+\+Near\+Esq\+X}!comparacoes.\+c@{comparacoes.\+c}}
+\subsubsection[{diagonal\+\_\+\+Near\+Esq\+X}]{\setlength{\rightskip}{0pt plus 5cm}void diagonal\+\_\+\+Near\+Esq\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{n, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{comparacoes_8c_a451ba55abf7b11d37e104555ca9fe894}
+Função responsável por verificar se existe alguma posição em que é obrigatório jogar S\+O\+L\+\_\+\+O.
+
+Para tal, considera as casas oblíquas adjacentes segundo uma reta com declive negativo que possuem o valor S\+O\+L\+\_\+\+X ou F\+I\+X\+O\+\_\+\+X. Uma dessas casas horizontais está na posição (l,c) do tabuleiro.
+
+Se a casa que se encontra no meio for V\+A\+Z\+I\+A, esta será uma posição onde ocorrerá a ajuda. Para além disso, se for V\+A\+Z\+I\+A ou A\+J\+U\+D\+A, será também uma das casas alteradas pelo solver do jogo. \hypertarget{comparacoes_8c_ae6f8b718012f2607099de89610955b04}{\index{comparacoes.\+c@{comparacoes.\+c}!diagonal\+\_\+\+Spaced\+O@{diagonal\+\_\+\+Spaced\+O}}
+\index{diagonal\+\_\+\+Spaced\+O@{diagonal\+\_\+\+Spaced\+O}!comparacoes.\+c@{comparacoes.\+c}}
+\subsubsection[{diagonal\+\_\+\+Spaced\+O}]{\setlength{\rightskip}{0pt plus 5cm}void diagonal\+\_\+\+Spaced\+O (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{n, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{comparacoes_8c_ae6f8b718012f2607099de89610955b04}
+Função responsável por verificar se existe alguma posição em que é obrigatório jogar S\+O\+L\+\_\+\+X.
+
+Para tal, considera as casas obliquas espaçadas por uma casa V\+A\+Z\+I\+A ou A\+J\+U\+D\+A e que possuem o valor S\+O\+L\+\_\+\+O ou F\+I\+X\+O\+\_\+\+O. Uma dessas casas horizontais está na posição (l,c) do tabuleiro.
+
+Se a casa que se encontra no meio for V\+A\+Z\+I\+A, esta será uma posição onde ocorrerá a ajuda. Para além disso, se for V\+A\+Z\+I\+A ou A\+J\+U\+D\+A, será também uma das casas alteradas pelo solver do jogo. \hypertarget{comparacoes_8c_a8c15a6ae156233aa352ae8d869ab863a}{\index{comparacoes.\+c@{comparacoes.\+c}!diagonal\+\_\+\+Spaced\+X@{diagonal\+\_\+\+Spaced\+X}}
+\index{diagonal\+\_\+\+Spaced\+X@{diagonal\+\_\+\+Spaced\+X}!comparacoes.\+c@{comparacoes.\+c}}
+\subsubsection[{diagonal\+\_\+\+Spaced\+X}]{\setlength{\rightskip}{0pt plus 5cm}void diagonal\+\_\+\+Spaced\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{n, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{comparacoes_8c_a8c15a6ae156233aa352ae8d869ab863a}
+Função responsável por verificar se existe alguma posição em que é obrigatório jogar S\+O\+L\+\_\+\+O.
+
+Para tal, considera as casas obliquas espaçadas por uma casa V\+A\+Z\+I\+A ou A\+J\+U\+D\+A e que possuem o valor S\+O\+L\+\_\+\+X ou F\+I\+X\+O\+\_\+\+X. Uma dessas casas horizontais está na posição (l,c) do tabuleiro.
+
+Se a casa que se encontra no meio for V\+A\+Z\+I\+A, esta será uma posição onde ocorrerá a ajuda. Para além disso, se for V\+A\+Z\+I\+A ou A\+J\+U\+D\+A, será também uma das casas alteradas pelo solver do jogo. \hypertarget{comparacoes_8c_a574c234a1a84c9355485c4c936894ad5}{\index{comparacoes.\+c@{comparacoes.\+c}!line\+\_\+\+Near\+O@{line\+\_\+\+Near\+O}}
+\index{line\+\_\+\+Near\+O@{line\+\_\+\+Near\+O}!comparacoes.\+c@{comparacoes.\+c}}
+\subsubsection[{line\+\_\+\+Near\+O}]{\setlength{\rightskip}{0pt plus 5cm}void line\+\_\+\+Near\+O (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{n, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{comparacoes_8c_a574c234a1a84c9355485c4c936894ad5}
+Função responsável por verificar se existe alguma posição em que é obrigatório jogar S\+O\+L\+\_\+\+X.
+
+Para tal, considera se duas casas horizontais adjacentes possuem o valor de S\+O\+L\+\_\+\+O ou F\+I\+X\+O\+\_\+\+O. Uma das casas em questão corresponde, à casa da posição (l,c) do tabuleiro.
+
+Se a outra casa adjacente for V\+A\+Z\+I\+A, esta será uma posição onde ocorrerá a ajuda. Para além disso, se for V\+A\+Z\+I\+A ou A\+J\+U\+D\+A, será também uma das casas alteradas pelo solver do jogo. \hypertarget{comparacoes_8c_a5a1ceab07799919222689d6d5e6d9c57}{\index{comparacoes.\+c@{comparacoes.\+c}!line\+\_\+\+Near\+X@{line\+\_\+\+Near\+X}}
+\index{line\+\_\+\+Near\+X@{line\+\_\+\+Near\+X}!comparacoes.\+c@{comparacoes.\+c}}
+\subsubsection[{line\+\_\+\+Near\+X}]{\setlength{\rightskip}{0pt plus 5cm}void line\+\_\+\+Near\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{n, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{comparacoes_8c_a5a1ceab07799919222689d6d5e6d9c57}
+Função responsável por verificar se existe alguma posição em que é obrigatório jogar S\+O\+L\+\_\+\+O.
+
+Para tal, considera se duas casas horizontais adjacentes possuem o valor de S\+O\+L\+\_\+\+X ou F\+I\+X\+O\+\_\+\+X. Uma das casas em questão corresponde, à casa da posição (l,c) do tabuleiro.
+
+Se a outra casa adjacente for V\+A\+Z\+I\+A, esta será uma posição onde ocorrerá a ajuda. Para além disso, se for V\+A\+Z\+I\+A ou A\+J\+U\+D\+A, será também uma das casas alteradas pelo solver do jogo. \hypertarget{comparacoes_8c_a64433e2212c1500ebe17051266eab72a}{\index{comparacoes.\+c@{comparacoes.\+c}!line\+\_\+\+Spaced\+O@{line\+\_\+\+Spaced\+O}}
+\index{line\+\_\+\+Spaced\+O@{line\+\_\+\+Spaced\+O}!comparacoes.\+c@{comparacoes.\+c}}
+\subsubsection[{line\+\_\+\+Spaced\+O}]{\setlength{\rightskip}{0pt plus 5cm}void line\+\_\+\+Spaced\+O (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{n, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{comparacoes_8c_a64433e2212c1500ebe17051266eab72a}
+Função responsável por verificar se existe alguma posição em que é obrigatório jogar S\+O\+L\+\_\+\+X.
+
+Para tal, considera as casas horizontais espaçadas por uma casa V\+A\+Z\+I\+A ou A\+J\+U\+D\+A e que possuem o valor S\+O\+L\+\_\+\+O ou F\+I\+X\+O\+\_\+\+O. Uma dessas casas horizontais está na posição (l,c) do tabuleiro.
+
+Se a casa que se encontra no meio for V\+A\+Z\+I\+A, esta será uma posição onde ocorrerá a ajuda. Para além disso, se for V\+A\+Z\+I\+A ou A\+J\+U\+D\+A, será também uma das casas alteradas pelo solver do jogo. \hypertarget{comparacoes_8c_a9c51e7360b047ca7c625f5c0845d284b}{\index{comparacoes.\+c@{comparacoes.\+c}!line\+\_\+\+Spaced\+X@{line\+\_\+\+Spaced\+X}}
+\index{line\+\_\+\+Spaced\+X@{line\+\_\+\+Spaced\+X}!comparacoes.\+c@{comparacoes.\+c}}
+\subsubsection[{line\+\_\+\+Spaced\+X}]{\setlength{\rightskip}{0pt plus 5cm}void line\+\_\+\+Spaced\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{n, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{comparacoes_8c_a9c51e7360b047ca7c625f5c0845d284b}
+Função responsável por verificar se existe alguma posição em que é obrigatório jogar S\+O\+L\+\_\+\+O.
+
+Para tal, considera as casas horizontais espaçadas por uma casa V\+A\+Z\+I\+A ou A\+J\+U\+D\+A e que possuem o valor S\+O\+L\+\_\+\+X ou F\+I\+X\+O\+\_\+\+X. Uma dessas casas horizontais está na posição (l,c) do tabuleiro.
+
+Se a casa que se encontra no meio for V\+A\+Z\+I\+A, esta será uma posição onde ocorrerá a ajuda. Para além disso, se for V\+A\+Z\+I\+A ou A\+J\+U\+D\+A, será também uma das casas alteradas pelo solver do jogo. 

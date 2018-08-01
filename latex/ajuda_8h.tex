@@ -1,0 +1,132 @@
+\hypertarget{ajuda_8h}{\section{ajuda.\+h File Reference}
+\label{ajuda_8h}\index{ajuda.\+h@{ajuda.\+h}}
+}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}cgi.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}estado.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}verificacao.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ficheiros.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}comparacoes.\+h\char`\"{}}\\*
+Include dependency graph for ajuda.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ajuda_8h_a0a0d5761ae1faae33eaa1d4d574144bb}{line\+Advise} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e, int l, int c)
+\item 
+void \hyperlink{ajuda_8h_ab50f4910dc41a8f1a95ff93a937d5c55}{column\+Advise} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e, int l, int c)
+\item 
+void \hyperlink{ajuda_8h_adada5febce8930b9452ee3b5860985cb}{diagonal\+Advise} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e, int l, int c)
+\item 
+void \hyperlink{ajuda_8h_ae3357364a229b23fb76d6d014eee58a9}{check\+Adviser} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e, int l, int c)
+\item 
+void \hyperlink{ajuda_8h_a65119b1131ff083a5170a30a2f24e8fa}{give\+Help} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} n, char $\ast$buffer)
+\item 
+void \hyperlink{ajuda_8h_a6e7a084ec6e5a14201bfc2f52823cad7}{help\+Controller} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e)
+\item 
+void \hyperlink{ajuda_8h_a6eae6fda33fc6753ae72f6800108a340}{draw\+\_\+help} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e)
+\item 
+void \hyperlink{ajuda_8h_a66429492ac9b11c94e80e299faf80d9e}{solver} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} n, char $\ast$buffer)
+\item 
+void \hyperlink{ajuda_8h_a77da99fb58b9b0116edfaa50f9d6cffe}{choose\+Val} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e, int l, int c, char sol)
+\item 
+void \hyperlink{ajuda_8h_a02fc8a11bae110833e696829f4617d23}{draw\+\_\+solver} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Protótipos das funções que permitem que utilizador usufrua de ajudas no decorrer do jogo. 
+
+\subsection{Function Documentation}
+\hypertarget{ajuda_8h_ae3357364a229b23fb76d6d014eee58a9}{\index{ajuda.\+h@{ajuda.\+h}!check\+Adviser@{check\+Adviser}}
+\index{check\+Adviser@{check\+Adviser}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{check\+Adviser}]{\setlength{\rightskip}{0pt plus 5cm}void check\+Adviser (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_ae3357364a229b23fb76d6d014eee58a9}
+Função que verifica se exista alguma casa em que é possivel dar A\+J\+U\+D\+A. \hypertarget{ajuda_8h_a77da99fb58b9b0116edfaa50f9d6cffe}{\index{ajuda.\+h@{ajuda.\+h}!choose\+Val@{choose\+Val}}
+\index{choose\+Val@{choose\+Val}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{choose\+Val}]{\setlength{\rightskip}{0pt plus 5cm}void choose\+Val (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e, }
+\item[{int}]{l, }
+\item[{int}]{c, }
+\item[{char}]{sol}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a77da99fb58b9b0116edfaa50f9d6cffe}
+Função responsável por alterar o valor da casa da posição (l,c) do tabuleiro.
+
+Função responsável por alterar o valor da casa da posição (l,c) do tabuleiro. Em virtude disso mesmo, considera o carácter recebido, que lhe indica o valor a colocar.
+
+Se o carácter, for 'O' então joga S\+O\+L\+\_\+\+O. Caso contrário joga S\+O\+L\+\_\+\+X. \hypertarget{ajuda_8h_ab50f4910dc41a8f1a95ff93a937d5c55}{\index{ajuda.\+h@{ajuda.\+h}!column\+Advise@{column\+Advise}}
+\index{column\+Advise@{column\+Advise}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{column\+Advise}]{\setlength{\rightskip}{0pt plus 5cm}void column\+Advise (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_ab50f4910dc41a8f1a95ff93a937d5c55}
+Função que verifica verticalmente se existe alguma casa em que é possivel dar A\+J\+U\+D\+A. \hypertarget{ajuda_8h_adada5febce8930b9452ee3b5860985cb}{\index{ajuda.\+h@{ajuda.\+h}!diagonal\+Advise@{diagonal\+Advise}}
+\index{diagonal\+Advise@{diagonal\+Advise}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{diagonal\+Advise}]{\setlength{\rightskip}{0pt plus 5cm}void diagonal\+Advise (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_adada5febce8930b9452ee3b5860985cb}
+Função que verifica diagonalmente se existe alguma casa em que é possivel dar A\+J\+U\+D\+A. \hypertarget{ajuda_8h_a6eae6fda33fc6753ae72f6800108a340}{\index{ajuda.\+h@{ajuda.\+h}!draw\+\_\+help@{draw\+\_\+help}}
+\index{draw\+\_\+help@{draw\+\_\+help}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{draw\+\_\+help}]{\setlength{\rightskip}{0pt plus 5cm}void draw\+\_\+help (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a6eae6fda33fc6753ae72f6800108a340}
+Função que coloca no jogo a imagem que permite a ocorrência de ajudas. \hypertarget{ajuda_8h_a02fc8a11bae110833e696829f4617d23}{\index{ajuda.\+h@{ajuda.\+h}!draw\+\_\+solver@{draw\+\_\+solver}}
+\index{draw\+\_\+solver@{draw\+\_\+solver}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{draw\+\_\+solver}]{\setlength{\rightskip}{0pt plus 5cm}void draw\+\_\+solver (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a02fc8a11bae110833e696829f4617d23}
+Função encarregue de colocar a imagem que permite a ocorrência de uma iteração da resolução do solver. \hypertarget{ajuda_8h_a65119b1131ff083a5170a30a2f24e8fa}{\index{ajuda.\+h@{ajuda.\+h}!give\+Help@{give\+Help}}
+\index{give\+Help@{give\+Help}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{give\+Help}]{\setlength{\rightskip}{0pt plus 5cm}void give\+Help (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{n, }
+\item[{char $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a65119b1131ff083a5170a30a2f24e8fa}
+Função responsável por indicar ao jogador qual a posição mais acertada em que este deve jogar. \hypertarget{ajuda_8h_a6e7a084ec6e5a14201bfc2f52823cad7}{\index{ajuda.\+h@{ajuda.\+h}!help\+Controller@{help\+Controller}}
+\index{help\+Controller@{help\+Controller}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{help\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Controller (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a6e7a084ec6e5a14201bfc2f52823cad7}
+Função responsável por colocar no ecrã as imagens que informam as ajudas restantes do utilizador. \hypertarget{ajuda_8h_a0a0d5761ae1faae33eaa1d4d574144bb}{\index{ajuda.\+h@{ajuda.\+h}!line\+Advise@{line\+Advise}}
+\index{line\+Advise@{line\+Advise}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{line\+Advise}]{\setlength{\rightskip}{0pt plus 5cm}void line\+Advise (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a0a0d5761ae1faae33eaa1d4d574144bb}
+Função que verifica horizontalmente se existe alguma casa em que é possivel dar A\+J\+U\+D\+A. \hypertarget{ajuda_8h_a66429492ac9b11c94e80e299faf80d9e}{\index{ajuda.\+h@{ajuda.\+h}!solver@{solver}}
+\index{solver@{solver}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{solver}]{\setlength{\rightskip}{0pt plus 5cm}void solver (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{n, }
+\item[{char $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a66429492ac9b11c94e80e299faf80d9e}
+Função responsável por verificar em que posições poderá ocorrer a ação do solver do jogo.
+
+S\+O\+L\+V\+E\+R Função responsável por verificar em que posições poderá ocorrer a ação do solver do jogo. 

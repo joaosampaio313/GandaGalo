@@ -1,0 +1,66 @@
+\hypertarget{stack_8h}{\section{stack.\+h File Reference}
+\label{stack_8h}\index{stack.\+h@{stack.\+h}}
+}
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{estado_8h_a6a29548da3b831560127ea1a39663399}{L\+Val} \hyperlink{stack_8h_a80d719e3443878ea0c123a5a2705b369}{readstack} (F\+I\+L\+E $\ast$fp)
+\item 
+void \hyperlink{stack_8h_a4c8c631ef0f398486bce998c9847c43d}{stack2str} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e, F\+I\+L\+E $\ast$fp)
+\item 
+void \hyperlink{stack_8h_a889d08e440163b0a84bb2c3803b5192b}{add\+Head} (\hyperlink{estado_8h_a6a29548da3b831560127ea1a39663399}{L\+Val} $\ast$l, \hyperlink{estado_8h_a8caee87c7dee89cd4657d684a2777d15}{S\+T\+V} val)
+\item 
+\hyperlink{estado_8h_a8caee87c7dee89cd4657d684a2777d15}{S\+T\+V} \hyperlink{stack_8h_ad6db96b66b056966f28a2496015e9720}{pop\+Head} (\hyperlink{estado_8h_a6a29548da3b831560127ea1a39663399}{L\+Val} $\ast$l, \hyperlink{estado_8h_a8caee87c7dee89cd4657d684a2777d15}{S\+T\+V} aux)
+\item 
+void \hyperlink{stack_8h_af7a20d7811e6812a95621bf380122a38}{add\+To\+Tail} (\hyperlink{estado_8h_a6a29548da3b831560127ea1a39663399}{L\+Val} $\ast$s, int i, int j, char val, int anc)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definição das funções relacionadas com a S\+T\+A\+C\+K. 
+
+\subsection{Function Documentation}
+\hypertarget{stack_8h_a889d08e440163b0a84bb2c3803b5192b}{\index{stack.\+h@{stack.\+h}!add\+Head@{add\+Head}}
+\index{add\+Head@{add\+Head}!stack.\+h@{stack.\+h}}
+\subsubsection[{add\+Head}]{\setlength{\rightskip}{0pt plus 5cm}void add\+Head (
+\begin{DoxyParamCaption}
+\item[{{\bf L\+Val} $\ast$}]{l, }
+\item[{{\bf S\+T\+V}}]{val}
+\end{DoxyParamCaption}
+)}}\label{stack_8h_a889d08e440163b0a84bb2c3803b5192b}
+Função responsável por adicionar dados do jogo na cauda da stack. \hypertarget{stack_8h_af7a20d7811e6812a95621bf380122a38}{\index{stack.\+h@{stack.\+h}!add\+To\+Tail@{add\+To\+Tail}}
+\index{add\+To\+Tail@{add\+To\+Tail}!stack.\+h@{stack.\+h}}
+\subsubsection[{add\+To\+Tail}]{\setlength{\rightskip}{0pt plus 5cm}void add\+To\+Tail (
+\begin{DoxyParamCaption}
+\item[{{\bf L\+Val} $\ast$}]{s, }
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{char}]{val, }
+\item[{int}]{anc}
+\end{DoxyParamCaption}
+)}}\label{stack_8h_af7a20d7811e6812a95621bf380122a38}
+Função responsável pelo push dos dados provenientes da stack do ficheiro. \hypertarget{stack_8h_ad6db96b66b056966f28a2496015e9720}{\index{stack.\+h@{stack.\+h}!pop\+Head@{pop\+Head}}
+\index{pop\+Head@{pop\+Head}!stack.\+h@{stack.\+h}}
+\subsubsection[{pop\+Head}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+V} pop\+Head (
+\begin{DoxyParamCaption}
+\item[{{\bf L\+Val} $\ast$}]{l, }
+\item[{{\bf S\+T\+V}}]{aux}
+\end{DoxyParamCaption}
+)}}\label{stack_8h_ad6db96b66b056966f28a2496015e9720}
+Função responsável pelo pop dos dados provenientes da stack que se encontra no ficheiro. \hypertarget{stack_8h_a80d719e3443878ea0c123a5a2705b369}{\index{stack.\+h@{stack.\+h}!readstack@{readstack}}
+\index{readstack@{readstack}!stack.\+h@{stack.\+h}}
+\subsubsection[{readstack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\+Val} readstack (
+\begin{DoxyParamCaption}
+\item[{F\+I\+L\+E $\ast$}]{fp}
+\end{DoxyParamCaption}
+)}}\label{stack_8h_a80d719e3443878ea0c123a5a2705b369}
+Função que lê a stack existente no ficheiro que lhe é passado como parâmetro. \hypertarget{stack_8h_a4c8c631ef0f398486bce998c9847c43d}{\index{stack.\+h@{stack.\+h}!stack2str@{stack2str}}
+\index{stack2str@{stack2str}!stack.\+h@{stack.\+h}}
+\subsubsection[{stack2str}]{\setlength{\rightskip}{0pt plus 5cm}void stack2str (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e, }
+\item[{F\+I\+L\+E $\ast$}]{fp}
+\end{DoxyParamCaption}
+)}}\label{stack_8h_a4c8c631ef0f398486bce998c9847c43d}
+Função que retira o elemento do topo da stack, transformando de seguida numa string. 

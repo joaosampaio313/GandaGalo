@@ -1,0 +1,240 @@
+\hypertarget{jogo_8c}{\section{jogo.\+c File Reference}
+\label{jogo_8c}\index{jogo.\+c@{jogo.\+c}}
+}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include $<$sys/stat.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}cgi.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}estado.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}stack.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ajuda.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ficheiros.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}verificacao.\+h\char`\"{}}\\*
+Include dependency graph for jogo.\+c\+:
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{jogo_8c_a6110b896bccabff8c3810bd57644b456}{P\+A\+T\+H\+\_\+\+T\+A\+B\+U\+L\+E\+I\+R\+O\+S}~\char`\"{}/var/www/html/tabuleiros/\char`\"{}
+\item 
+\#define \hyperlink{jogo_8c_a8d3521f45135e7df49cc09518576e02b}{P\+A\+T\+H\+\_\+\+U\+T\+I\+L\+I\+Z\+A\+D\+O\+R\+E\+S}~\char`\"{}/var/www/html/users/\char`\"{}
+\item 
+\#define \hyperlink{jogo_8c_a1d5dab30b404fab91608086105afc78c}{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R}~10240
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{jogo_8c_af16fb7990d5ebc59484ed8579df16ad6}{play\+\_\+finder} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e, \hyperlink{estado_8h_a8caee87c7dee89cd4657d684a2777d15}{S\+T\+V} v)
+\item 
+\hyperlink{estado_8h_a8caee87c7dee89cd4657d684a2777d15}{S\+T\+V} \hyperlink{jogo_8c_ab89c0eac1df02819f02343054180f980}{play\+\_\+maker} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e, int l, int c)
+\item 
+char $\ast$ \hyperlink{jogo_8c_ac84e5c95d0924b414027f83004326299}{link\+\_\+maker} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e, int l, int c)
+\item 
+void \hyperlink{jogo_8c_a12e0b619de32d0c7d3a2cafa23c6d267}{buttons\+\_\+drawer} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e)
+\item 
+void \hyperlink{jogo_8c_aed9b0b05302f461006afa4a2cfc075ec}{icons\+\_\+drawer} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e)
+\item 
+void \hyperlink{jogo_8c_aff1f88ea056fe0954a9d17a57ad78817}{puzzle\+\_\+drawer} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e, int x, int y)
+\item 
+void \hyperlink{jogo_8c_ae3c91010e3fe573f74a059c79750e317}{game\+\_\+drawer} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e, int x, int y)
+\item 
+void \hyperlink{jogo_8c_a8ed2c66cffb5f707ece130f62ac8df5d}{player\+\_\+choice} (int x, int y)
+\item 
+void \hyperlink{jogo_8c_ae8389edfb3aeca096ccadf20b08e1152}{tab\+\_\+choice} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e, char $\ast$aux, int x, int y)
+\item 
+void \hyperlink{jogo_8c_aec3f7d704474ea54782e13aa0e416ca1}{init\+\_\+game} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e, char $\ast$aux, int x, int y)
+\item 
+void \hyperlink{jogo_8c_a840b1e767c01afdb36b537c146495797}{play} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e, char $\ast$aux, int x, int y)
+\item 
+void \hyperlink{jogo_8c_aaa1900b7c9facc8b459187eaf75b08d5}{click\+\_\+undo} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e, char $\ast$aux, int x, int y)
+\item 
+void \hyperlink{jogo_8c_afbe260558ea9f5f6077e573ff7b4aac0}{check\+\_\+anchor} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e, char $\ast$aux, int x, int y)
+\item 
+void \hyperlink{jogo_8c_a9078e06b2730cca1a787103e88cb6a83}{click\+\_\+anchor} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e, char $\ast$aux, int x, int y)
+\item 
+void \hyperlink{jogo_8c_a1aa43f5e2a976114e00215c5e508f028}{click\+\_\+help} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e, char $\ast$aux, int x, int y)
+\item 
+void \hyperlink{jogo_8c_a81bf5db35b58d284cb9b94082b3753f6}{click\+\_\+solver} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e, char $\ast$aux, int x, int y)
+\item 
+void \hyperlink{jogo_8c_a3ad6e40a3f8af77e1d8220477c8fd030}{make\+\_\+title} (int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{jogo_8c_a05fa99c547aa00f051eb611ebf55f757}{const char $\ast$ {\bfseries ficheiro} \mbox{[}$\,$\mbox{]} = \{\char`\"{}bloq.\+png\char`\"{},\char`\"{}x.\+png\char`\"{},\char`\"{}o.\+png\char`\"{},\char`\"{}vazio.\+png\char`\"{},\char`\"{}x.\+png\char`\"{},\char`\"{}o.\+png\char`\"{},\char`\"{}lamp.\+png\char`\"{}\}}\label{jogo_8c_a05fa99c547aa00f051eb611ebf55f757}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Funções responsáveis pela parte gráfica e pelas alterações que ocorrem no tabuleiro do jogo. 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{jogo_8c_a1d5dab30b404fab91608086105afc78c}{\index{jogo.\+c@{jogo.\+c}!M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R@{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R}}
+\index{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R@{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R~10240}}\label{jogo_8c_a1d5dab30b404fab91608086105afc78c}
+Constante utilizada para definir o tamanho dos arrays locais formados nas funções criadas. \hypertarget{jogo_8c_a6110b896bccabff8c3810bd57644b456}{\index{jogo.\+c@{jogo.\+c}!P\+A\+T\+H\+\_\+\+T\+A\+B\+U\+L\+E\+I\+R\+O\+S@{P\+A\+T\+H\+\_\+\+T\+A\+B\+U\+L\+E\+I\+R\+O\+S}}
+\index{P\+A\+T\+H\+\_\+\+T\+A\+B\+U\+L\+E\+I\+R\+O\+S@{P\+A\+T\+H\+\_\+\+T\+A\+B\+U\+L\+E\+I\+R\+O\+S}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{P\+A\+T\+H\+\_\+\+T\+A\+B\+U\+L\+E\+I\+R\+O\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+A\+T\+H\+\_\+\+T\+A\+B\+U\+L\+E\+I\+R\+O\+S~\char`\"{}/var/www/html/tabuleiros/\char`\"{}}}\label{jogo_8c_a6110b896bccabff8c3810bd57644b456}
+Caminho para chegar à pasta onde se encontram os tabuleiros do jogo. \hypertarget{jogo_8c_a8d3521f45135e7df49cc09518576e02b}{\index{jogo.\+c@{jogo.\+c}!P\+A\+T\+H\+\_\+\+U\+T\+I\+L\+I\+Z\+A\+D\+O\+R\+E\+S@{P\+A\+T\+H\+\_\+\+U\+T\+I\+L\+I\+Z\+A\+D\+O\+R\+E\+S}}
+\index{P\+A\+T\+H\+\_\+\+U\+T\+I\+L\+I\+Z\+A\+D\+O\+R\+E\+S@{P\+A\+T\+H\+\_\+\+U\+T\+I\+L\+I\+Z\+A\+D\+O\+R\+E\+S}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{P\+A\+T\+H\+\_\+\+U\+T\+I\+L\+I\+Z\+A\+D\+O\+R\+E\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+A\+T\+H\+\_\+\+U\+T\+I\+L\+I\+Z\+A\+D\+O\+R\+E\+S~\char`\"{}/var/www/html/users/\char`\"{}}}\label{jogo_8c_a8d3521f45135e7df49cc09518576e02b}
+Caminho para chegar ao ficheiro dos utilizadores. 
+
+\subsection{Function Documentation}
+\hypertarget{jogo_8c_a12e0b619de32d0c7d3a2cafa23c6d267}{\index{jogo.\+c@{jogo.\+c}!buttons\+\_\+drawer@{buttons\+\_\+drawer}}
+\index{buttons\+\_\+drawer@{buttons\+\_\+drawer}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{buttons\+\_\+drawer}]{\setlength{\rightskip}{0pt plus 5cm}void buttons\+\_\+drawer (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e}
+\end{DoxyParamCaption}
+)}}\label{jogo_8c_a12e0b619de32d0c7d3a2cafa23c6d267}
+Função responsável pelo desenho dos botões que provocam alterações no tabuleiro. \hypertarget{jogo_8c_afbe260558ea9f5f6077e573ff7b4aac0}{\index{jogo.\+c@{jogo.\+c}!check\+\_\+anchor@{check\+\_\+anchor}}
+\index{check\+\_\+anchor@{check\+\_\+anchor}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{check\+\_\+anchor}]{\setlength{\rightskip}{0pt plus 5cm}void check\+\_\+anchor (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e, }
+\item[{char $\ast$}]{aux, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{jogo_8c_afbe260558ea9f5f6077e573ff7b4aac0}
+Função responsável por fixar o momento do jogo pretendido pelo utilizador. \hypertarget{jogo_8c_a9078e06b2730cca1a787103e88cb6a83}{\index{jogo.\+c@{jogo.\+c}!click\+\_\+anchor@{click\+\_\+anchor}}
+\index{click\+\_\+anchor@{click\+\_\+anchor}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{click\+\_\+anchor}]{\setlength{\rightskip}{0pt plus 5cm}void click\+\_\+anchor (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e, }
+\item[{char $\ast$}]{aux, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{jogo_8c_a9078e06b2730cca1a787103e88cb6a83}
+Função responsável por regressar ao momento do jogo onde foi fixada a última âncora. \hypertarget{jogo_8c_a1aa43f5e2a976114e00215c5e508f028}{\index{jogo.\+c@{jogo.\+c}!click\+\_\+help@{click\+\_\+help}}
+\index{click\+\_\+help@{click\+\_\+help}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{click\+\_\+help}]{\setlength{\rightskip}{0pt plus 5cm}void click\+\_\+help (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e, }
+\item[{char $\ast$}]{aux, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{jogo_8c_a1aa43f5e2a976114e00215c5e508f028}
+Função responsável pela ocorrência de ajuda no jogo. \hypertarget{jogo_8c_a81bf5db35b58d284cb9b94082b3753f6}{\index{jogo.\+c@{jogo.\+c}!click\+\_\+solver@{click\+\_\+solver}}
+\index{click\+\_\+solver@{click\+\_\+solver}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{click\+\_\+solver}]{\setlength{\rightskip}{0pt plus 5cm}void click\+\_\+solver (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e, }
+\item[{char $\ast$}]{aux, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{jogo_8c_a81bf5db35b58d284cb9b94082b3753f6}
+Função responsável por colocar a imagem que permite que ocorra uma iteração da resolução do tabuleiro. \hypertarget{jogo_8c_aaa1900b7c9facc8b459187eaf75b08d5}{\index{jogo.\+c@{jogo.\+c}!click\+\_\+undo@{click\+\_\+undo}}
+\index{click\+\_\+undo@{click\+\_\+undo}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{click\+\_\+undo}]{\setlength{\rightskip}{0pt plus 5cm}void click\+\_\+undo (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e, }
+\item[{char $\ast$}]{aux, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{jogo_8c_aaa1900b7c9facc8b459187eaf75b08d5}
+Função responsável por alterar o tabuleiro para a última jogada do utilizador. \hypertarget{jogo_8c_ae3c91010e3fe573f74a059c79750e317}{\index{jogo.\+c@{jogo.\+c}!game\+\_\+drawer@{game\+\_\+drawer}}
+\index{game\+\_\+drawer@{game\+\_\+drawer}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{game\+\_\+drawer}]{\setlength{\rightskip}{0pt plus 5cm}void game\+\_\+drawer (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{jogo_8c_ae3c91010e3fe573f74a059c79750e317}
+Função responsável pela parte gráfica do jogo. \hypertarget{jogo_8c_aed9b0b05302f461006afa4a2cfc075ec}{\index{jogo.\+c@{jogo.\+c}!icons\+\_\+drawer@{icons\+\_\+drawer}}
+\index{icons\+\_\+drawer@{icons\+\_\+drawer}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{icons\+\_\+drawer}]{\setlength{\rightskip}{0pt plus 5cm}void icons\+\_\+drawer (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e}
+\end{DoxyParamCaption}
+)}}\label{jogo_8c_aed9b0b05302f461006afa4a2cfc075ec}
+Função responsável pelo desenho dos icones do jogo. \hypertarget{jogo_8c_aec3f7d704474ea54782e13aa0e416ca1}{\index{jogo.\+c@{jogo.\+c}!init\+\_\+game@{init\+\_\+game}}
+\index{init\+\_\+game@{init\+\_\+game}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{init\+\_\+game}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+game (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e, }
+\item[{char $\ast$}]{aux, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{jogo_8c_aec3f7d704474ea54782e13aa0e416ca1}
+Função responsável por desenhar o tabuleiro inicial. \hypertarget{jogo_8c_ac84e5c95d0924b414027f83004326299}{\index{jogo.\+c@{jogo.\+c}!link\+\_\+maker@{link\+\_\+maker}}
+\index{link\+\_\+maker@{link\+\_\+maker}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{link\+\_\+maker}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ link\+\_\+maker (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{jogo_8c_ac84e5c95d0924b414027f83004326299}
+Função responsável por atualizar a string do browser sempre que ocorre uma mudança no tabuleiro do jogo. \hypertarget{jogo_8c_a3ad6e40a3f8af77e1d8220477c8fd030}{\index{jogo.\+c@{jogo.\+c}!make\+\_\+title@{make\+\_\+title}}
+\index{make\+\_\+title@{make\+\_\+title}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{make\+\_\+title}]{\setlength{\rightskip}{0pt plus 5cm}void make\+\_\+title (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{jogo_8c_a3ad6e40a3f8af77e1d8220477c8fd030}
+Função responsável por colocar a imagem correspondente ao titulo do jogo. \hypertarget{jogo_8c_a840b1e767c01afdb36b537c146495797}{\index{jogo.\+c@{jogo.\+c}!play@{play}}
+\index{play@{play}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{play}]{\setlength{\rightskip}{0pt plus 5cm}void play (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e, }
+\item[{char $\ast$}]{aux, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{jogo_8c_a840b1e767c01afdb36b537c146495797}
+Função encarregue por colocar as imagens no tabuleiro, consoante as jogadas do utilizador. \hypertarget{jogo_8c_af16fb7990d5ebc59484ed8579df16ad6}{\index{jogo.\+c@{jogo.\+c}!play\+\_\+finder@{play\+\_\+finder}}
+\index{play\+\_\+finder@{play\+\_\+finder}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{play\+\_\+finder}]{\setlength{\rightskip}{0pt plus 5cm}void play\+\_\+finder (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e, }
+\item[{{\bf S\+T\+V}}]{v}
+\end{DoxyParamCaption}
+)}}\label{jogo_8c_af16fb7990d5ebc59484ed8579df16ad6}
+Função que identifica a última casa que o jogador alterou antes de utilizar uma âncora. Através do S\+T\+V que recebe, muda a casa para o seu valor correspondente. \hypertarget{jogo_8c_ab89c0eac1df02819f02343054180f980}{\index{jogo.\+c@{jogo.\+c}!play\+\_\+maker@{play\+\_\+maker}}
+\index{play\+\_\+maker@{play\+\_\+maker}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{play\+\_\+maker}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+V} play\+\_\+maker (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{jogo_8c_ab89c0eac1df02819f02343054180f980}
+Função que altera a peça, consoante a jogada do utilizador. \hypertarget{jogo_8c_a8ed2c66cffb5f707ece130f62ac8df5d}{\index{jogo.\+c@{jogo.\+c}!player\+\_\+choice@{player\+\_\+choice}}
+\index{player\+\_\+choice@{player\+\_\+choice}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{player\+\_\+choice}]{\setlength{\rightskip}{0pt plus 5cm}void player\+\_\+choice (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{jogo_8c_a8ed2c66cffb5f707ece130f62ac8df5d}
+Função responsável por colocar as imagens que permite escolher o número do utilizador. \hypertarget{jogo_8c_aff1f88ea056fe0954a9d17a57ad78817}{\index{jogo.\+c@{jogo.\+c}!puzzle\+\_\+drawer@{puzzle\+\_\+drawer}}
+\index{puzzle\+\_\+drawer@{puzzle\+\_\+drawer}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{puzzle\+\_\+drawer}]{\setlength{\rightskip}{0pt plus 5cm}void puzzle\+\_\+drawer (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{jogo_8c_aff1f88ea056fe0954a9d17a57ad78817}
+Função responsável pelo desenho do tabuleiro. \hypertarget{jogo_8c_ae8389edfb3aeca096ccadf20b08e1152}{\index{jogo.\+c@{jogo.\+c}!tab\+\_\+choice@{tab\+\_\+choice}}
+\index{tab\+\_\+choice@{tab\+\_\+choice}!jogo.\+c@{jogo.\+c}}
+\subsubsection[{tab\+\_\+choice}]{\setlength{\rightskip}{0pt plus 5cm}void tab\+\_\+choice (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e, }
+\item[{char $\ast$}]{aux, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{jogo_8c_ae8389edfb3aeca096ccadf20b08e1152}
+Função responsável por desenhar as imagens que permitem a escolha do tabuleiro. 

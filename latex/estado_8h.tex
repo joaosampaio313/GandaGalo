@@ -1,0 +1,118 @@
+\hypertarget{estado_8h}{\section{estado.\+h File Reference}
+\label{estado_8h}\index{estado.\+h@{estado.\+h}}
+}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include $<$sys/stat.\+h$>$}\\*
+Include dependency graph for estado.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structstval}{stval}
+\item 
+struct \hyperlink{structaviso}{aviso}
+\item 
+struct \hyperlink{structlista}{lista}
+\item 
+struct \hyperlink{structestado}{estado}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{estado_8h_ab02e1c5c6948bf8cf3c21a0acad8a578}{M\+A\+X\+\_\+\+G\+R\+I\+D}~20
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structstval}{stval} \hyperlink{estado_8h_a8caee87c7dee89cd4657d684a2777d15}{S\+T\+V}
+\item 
+typedef struct \hyperlink{structaviso}{aviso} \hyperlink{estado_8h_a985e6d3fc31cc302b5898fa14846efe8}{A\+V\+I\+S\+O}
+\item 
+typedef struct \hyperlink{structlista}{lista} $\ast$ \hyperlink{estado_8h_a6a29548da3b831560127ea1a39663399}{L\+Val}
+\item 
+typedef struct \hyperlink{structestado}{estado} \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}{V\+A\+L\+O\+R} \{ \\*
+{\bfseries B\+L\+O\+Q\+U\+E\+A\+D\+A}, 
+{\bfseries F\+I\+X\+O\+\_\+\+X}, 
+{\bfseries F\+I\+X\+O\+\_\+\+O}, 
+{\bfseries V\+A\+Z\+I\+A}, 
+\\*
+{\bfseries S\+O\+L\+\_\+\+X}, 
+{\bfseries S\+O\+L\+\_\+\+O}, 
+{\bfseries A\+J\+U\+D\+A}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{estado_8h_af32bcca287788ae0563fa9a6debf4603}{estado2str} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e)
+\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} \hyperlink{estado_8h_a45c321c3b31e4e95b8451d7db7678cf0}{str2estado} (char $\ast$argumentos)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Protótipos das funções relacionadas com o estado. 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{estado_8h_ab02e1c5c6948bf8cf3c21a0acad8a578}{\index{estado.\+h@{estado.\+h}!M\+A\+X\+\_\+\+G\+R\+I\+D@{M\+A\+X\+\_\+\+G\+R\+I\+D}}
+\index{M\+A\+X\+\_\+\+G\+R\+I\+D@{M\+A\+X\+\_\+\+G\+R\+I\+D}!estado.\+h@{estado.\+h}}
+\subsubsection[{M\+A\+X\+\_\+\+G\+R\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+G\+R\+I\+D~20}}\label{estado_8h_ab02e1c5c6948bf8cf3c21a0acad8a578}
+Constante para definir o número máximo de linhas e de colunas que um tabuleiro pode ter. 
+
+\subsection{Typedef Documentation}
+\hypertarget{estado_8h_a985e6d3fc31cc302b5898fa14846efe8}{\index{estado.\+h@{estado.\+h}!A\+V\+I\+S\+O@{A\+V\+I\+S\+O}}
+\index{A\+V\+I\+S\+O@{A\+V\+I\+S\+O}!estado.\+h@{estado.\+h}}
+\subsubsection[{A\+V\+I\+S\+O}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf aviso}  {\bf A\+V\+I\+S\+O}}}\label{estado_8h_a985e6d3fc31cc302b5898fa14846efe8}
+Estrutura necessária para o funcionamento das ajudas e do solver. Armazena\+:
+\begin{DoxyItemize}
+\item Um inteiro, que identifica se ocorre ajuda ou se é necessário a utilização do solver.
+\item Dois inteiros, correspondentes às posições onde ocorrerá a A\+J\+U\+D\+A.
+\item Um char, identificativo do valor que é obrigatório jogar na posicao (x,y) da grelha. 
+\end{DoxyItemize}\hypertarget{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{\index{estado.\+h@{estado.\+h}!E\+S\+T\+A\+D\+O@{E\+S\+T\+A\+D\+O}}
+\index{E\+S\+T\+A\+D\+O@{E\+S\+T\+A\+D\+O}!estado.\+h@{estado.\+h}}
+\subsubsection[{E\+S\+T\+A\+D\+O}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf estado}  {\bf E\+S\+T\+A\+D\+O}}}\label{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}
+Estrura que guarda o estado do jogo. Nela é guardada informação preponderante para o seu funciomento, tais como \+:
+\begin{DoxyItemize}
+\item Nº de linhas e colunas da grelha.
+\item A grelha e os respetivos valores de cada casa.
+\item Inteiros que identificam o utilizador, o tabuleiro e o nºde ajudas.
+\item Uma estrutura com os dados necessários para a ocorrência de ajudas.
+\item A stack com o histórico do jogo. 
+\end{DoxyItemize}\hypertarget{estado_8h_a6a29548da3b831560127ea1a39663399}{\index{estado.\+h@{estado.\+h}!L\+Val@{L\+Val}}
+\index{L\+Val@{L\+Val}!estado.\+h@{estado.\+h}}
+\subsubsection[{L\+Val}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf lista} $\ast$ {\bf L\+Val}}}\label{estado_8h_a6a29548da3b831560127ea1a39663399}
+Lista ligada, que permitirá a formação da stack que armazena um S\+T\+V correspondente a cada jogada. \hypertarget{estado_8h_a8caee87c7dee89cd4657d684a2777d15}{\index{estado.\+h@{estado.\+h}!S\+T\+V@{S\+T\+V}}
+\index{S\+T\+V@{S\+T\+V}!estado.\+h@{estado.\+h}}
+\subsubsection[{S\+T\+V}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf stval}  {\bf S\+T\+V}}}\label{estado_8h_a8caee87c7dee89cd4657d684a2777d15}
+Estrutura que guarda as posições, o valor de uma jogada e se a ancora foi ativada. A stack formada, conterá elementos do tipo S\+T\+V. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}{\index{estado.\+h@{estado.\+h}!V\+A\+L\+O\+R@{V\+A\+L\+O\+R}}
+\index{V\+A\+L\+O\+R@{V\+A\+L\+O\+R}!estado.\+h@{estado.\+h}}
+\subsubsection[{V\+A\+L\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf V\+A\+L\+O\+R}}}\label{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}
+Enumeração dos possiveis valores que cada casa do tabuleiro pode ter. 
+
+\subsection{Function Documentation}
+\hypertarget{estado_8h_af32bcca287788ae0563fa9a6debf4603}{\index{estado.\+h@{estado.\+h}!estado2str@{estado2str}}
+\index{estado2str@{estado2str}!estado.\+h@{estado.\+h}}
+\subsubsection[{estado2str}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ estado2str (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e}
+\end{DoxyParamCaption}
+)}}\label{estado_8h_af32bcca287788ae0563fa9a6debf4603}
+Função que converte um estado numa string. \hypertarget{estado_8h_a45c321c3b31e4e95b8451d7db7678cf0}{\index{estado.\+h@{estado.\+h}!str2estado@{str2estado}}
+\index{str2estado@{str2estado}!estado.\+h@{estado.\+h}}
+\subsubsection[{str2estado}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+S\+T\+A\+D\+O} str2estado (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{argumentos}
+\end{DoxyParamCaption}
+)}}\label{estado_8h_a45c321c3b31e4e95b8451d7db7678cf0}
+Função que converte uma string num E\+S\+T\+A\+D\+O. 

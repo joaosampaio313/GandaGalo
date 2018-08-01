@@ -1,0 +1,91 @@
+\hypertarget{verificacao_8h}{\section{verificacao.\+h File Reference}
+\label{verificacao_8h}\index{verificacao.\+h@{verificacao.\+h}}
+}
+{\ttfamily \#include \char`\"{}estado.\+h\char`\"{}}\\*
+Include dependency graph for verificacao.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{verificacao_8h_ae87a9da4a4dc12da9834cd42baad3292}{line\+Check} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} n, int l, int c)
+\item 
+int \hyperlink{verificacao_8h_acb81b92efab5b39a9e2eee87270eeb6b}{column\+Check} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} n, int l, int c)
+\item 
+int \hyperlink{verificacao_8h_a777b0b3936d2fc46182115590b7832c6}{diagonal\+Check} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} n, int l, int c)
+\item 
+int \hyperlink{verificacao_8h_ae50f2a437a3b9140939c5965f1ca8b48}{verf\+Table} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} n)
+\item 
+int \hyperlink{verificacao_8h_a0d8f09bdfd48d26c245bda27853d6186}{is\+Complete} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} n)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Protótipos das funções que permitem a validação do tabuleiro. 
+
+\subsection{Function Documentation}
+\hypertarget{verificacao_8h_acb81b92efab5b39a9e2eee87270eeb6b}{\index{verificacao.\+h@{verificacao.\+h}!column\+Check@{column\+Check}}
+\index{column\+Check@{column\+Check}!verificacao.\+h@{verificacao.\+h}}
+\subsubsection[{column\+Check}]{\setlength{\rightskip}{0pt plus 5cm}int column\+Check (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{n, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{verificacao_8h_acb81b92efab5b39a9e2eee87270eeb6b}
+Função que verifica se existem 3 peças iguais na vertical (coluna).
+
+Função que verifica se existem 3 peças iguais na vertical (coluna).
+
+Verifica que tipo de peça é, na posição a analizar, e se for X ou O vê as peças em cima e em baixo.
+
+Caso houver três peças do mesmo tipo na vertical retorna valor 0. Se não, retorna valor 1. \hypertarget{verificacao_8h_a777b0b3936d2fc46182115590b7832c6}{\index{verificacao.\+h@{verificacao.\+h}!diagonal\+Check@{diagonal\+Check}}
+\index{diagonal\+Check@{diagonal\+Check}!verificacao.\+h@{verificacao.\+h}}
+\subsubsection[{diagonal\+Check}]{\setlength{\rightskip}{0pt plus 5cm}int diagonal\+Check (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{n, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{verificacao_8h_a777b0b3936d2fc46182115590b7832c6}
+Função que verifica se existem 3 peças iguais na diagonal.
+
+Função que verifica se existem 3 peças iguais na diagonal.
+
+Verifica que tipo de peça é, na posição a analizar, e se for X ou O vê as peças do canto superior direito e inferior esquerda. Como também os cantos superior esquerdo e inferior direito.
+
+Caso houver três peças do mesmo tipo na diagonal retorna valor 0. Se não, retorna valor 1. \hypertarget{verificacao_8h_a0d8f09bdfd48d26c245bda27853d6186}{\index{verificacao.\+h@{verificacao.\+h}!is\+Complete@{is\+Complete}}
+\index{is\+Complete@{is\+Complete}!verificacao.\+h@{verificacao.\+h}}
+\subsubsection[{is\+Complete}]{\setlength{\rightskip}{0pt plus 5cm}int is\+Complete (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{n}
+\end{DoxyParamCaption}
+)}}\label{verificacao_8h_a0d8f09bdfd48d26c245bda27853d6186}
+Função que verifica se o tabuleiro está completo, isto é, sem quaisquer peças vazias ou peças de ajuda. \hypertarget{verificacao_8h_ae87a9da4a4dc12da9834cd42baad3292}{\index{verificacao.\+h@{verificacao.\+h}!line\+Check@{line\+Check}}
+\index{line\+Check@{line\+Check}!verificacao.\+h@{verificacao.\+h}}
+\subsubsection[{line\+Check}]{\setlength{\rightskip}{0pt plus 5cm}int line\+Check (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{n, }
+\item[{int}]{l, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{verificacao_8h_ae87a9da4a4dc12da9834cd42baad3292}
+Função que verifica se existem 3 peças iguais na horizontal (linha).
+
+Função que verifica se existem 3 peças iguais na horizontal (linha).
+
+Verifica que tipo de peça é, na posição a analizar, e se for X ou O vê as peças à sua direita e à sua esquerda.
+
+Caso houver três peças do mesmo tipo na horizontal retorna valor 0. Se não, retorna valor 1. \hypertarget{verificacao_8h_ae50f2a437a3b9140939c5965f1ca8b48}{\index{verificacao.\+h@{verificacao.\+h}!verf\+Table@{verf\+Table}}
+\index{verf\+Table@{verf\+Table}!verificacao.\+h@{verificacao.\+h}}
+\subsubsection[{verf\+Table}]{\setlength{\rightskip}{0pt plus 5cm}int verf\+Table (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{n}
+\end{DoxyParamCaption}
+)}}\label{verificacao_8h_ae50f2a437a3b9140939c5965f1ca8b48}
+Função responsavél por verificar se existe no tabuleiro alguma sequência de 3 casas com o mesmo valor.
+
+Função responsavél por verificar se existe no tabuleiro alguma sequência de 3 casas com o mesmo valor.
+
+Os cantos do tabuleiro não são analisados pela função uma vez que serão analizados mas no sentido de verificar outras posições. Isto é, cada posição é analizada pelas posições adjacentes (8 posições; 3x3) o que significa que serão verificados também.
+
+A função verifica primeiro os elementos da primeira e última linha, aplicando a função line\+Check. Depois as posições da primeira e última coluna, aplicando a função collum\+Check. E por fim, analiza as restantes posições do tabuleiro para determinar se o tabuleiro é válido ou não. 
